@@ -17,8 +17,8 @@ pip install -r requirements.txt
 ## 🚀 실행 순서
 
 ```bash
-python collect_data.py   # 1. Open-Meteo API로 1년치 기온 데이터 수집
-python detect.py         # 2. 이상기온 탐지 (폭염/한파 분류)
+python collect_data.py   # 1. Open-Meteo API로 1년치 기온 데이터 수집 → weather_with_anomalies.csv 생성
+python detect.py         # 2. 이상기온 탐지 (폭염/한파 분류) → collect_data.py에서 생성한 csv파일 이용하여 머신러닝 진행 ...
 python visualize.py      # 3. 그래프 시각화 → temperature_analysis.png
 ```
 
